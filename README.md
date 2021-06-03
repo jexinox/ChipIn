@@ -31,7 +31,7 @@ C#. ASP.NET Core & MVC, MongoDB
 <b>Результат / продукт:</b> 
 Веб-приложение в среде VK Mini Apps, осуществляющее функции расчёта стоимости продуктов
 
-<b>Структура приложения:</b> 
+<b>Структура приложения:</b> <br>
 Контроллеры - src/ChipIn/Controllers<br>
 Модели - src/ChipIn/Models<br>
 Сервисы - src/ChipIn/Services
