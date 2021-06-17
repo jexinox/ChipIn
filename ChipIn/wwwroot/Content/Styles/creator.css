@@ -1,0 +1,76 @@
+input {
+	position: absolute;
+width: 252px;
+height: 50px;
+left: calc(50% - 252px/2);
+top: 283px;
+background: #FFFFFF;
+border: 1px solid #959595;
+box-sizing: border-box;
+border-radius: 30px;
+font-family: Raleway;
+font-style: normal;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+padding-left: 18px;
+color: #D0D0D0;
+}
+
+.main {
+	position: relative;
+	width: 360px;
+	height: 640px;
+	border: 1px solid black;
+}
+
+img {
+	position: absolute;
+	width: 201.73px;
+	height: 155px;
+	left: 79px;
+	top: 68px;
+}
+
+button {
+	position: absolute;
+width: 141px;
+height: 36px;
+left: 108px;
+top: 351px;
+
+/* Purple 1 */
+
+background: #9B51E0;
+border-radius: 30px;
+}
+
+.text {
+    text-align: center;
+    color: #FFFFFF;
+	font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+}
+
+.text1 {
+	position: absolute;
+width: 251px;
+height: 34px;
+left: calc(50% - 251px/2 - 1.5px);
+top: 237px;
+
+font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #282828;
+}

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://ex.nvg-group.com/libs/jquery/3.4.1/f.min.js"></script>
+    <link rel="stylesheet" href="~/Content/Styles/creator.css">
+</head>
+    <body>
+        <div class="main">
+            <img src="~/Content/Logo.png">
+            <div>
+                <label>
+                    <div class="text1"> Придумай свое оригинальное название! </div>
+                    <input id="name" placeholder="Название тусовки">
+                    <a href="/Groups/AddItem">
+                        <button class="text" onclick="createGroup()"> Вперед! </button>
+                    </a>
+                </label>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function createGroup() {
+                //name = $('#name').val()
+                //$.ajax({
+                //    url: '/Groups/CreateGroup',
+                //    method: 'post',
+                //    data: {
+                //        name: name,
+                //        creatorId: 'admin'
+                //    }
+                //})
+            }
+        </script>
+    </body>
+</html>

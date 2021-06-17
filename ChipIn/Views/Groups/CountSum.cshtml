@@ -1,0 +1,22 @@
+﻿<input id="id" placeholder="Введите id группы" />
+<button onclick="getSum()">Рассчитать</button>
+<br />
+<label>Рассчет для всех пользователей</label>
+<script type="text/javascript" src="https://ex.nvg-group.com/libs/jquery/3.4.1/f.min.js"></script>
+<div id="result">
+
+</div>
+<script>
+    function getSum() {
+        $.ajax({
+            url: "/Groups/CountUsersSum",
+            method: "get",
+            data: {
+                groupId: $("#id").val(),
+            },
+            success: function (data) {
+                $("#result").text(data)
+            }
+        })
+    }
+</script>

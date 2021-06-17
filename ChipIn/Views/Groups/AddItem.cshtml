@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="https://ex.nvg-group.com/libs/jquery/3.4.1/f.min.js"></script>
+    <link rel="stylesheet" href="~/Content/Styles/buydisplay.css">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <label>
+                <input id="name" class="name" placeholder="Название">
+            </label>
+        </div>
+        <div>
+            <label>
+                <div class="peopleText"> Количество человек: </div>
+                <input class="peopleAmount" placeholder="0">
+                <label>
+                    <label>
+                        <div class="amountText"> Единиц: </div>
+                        <input id="amount" class="Amount" placeholder="0">
+                        <label>
+                            <label>
+                                <div class="priceText"> Цена за единицу: </div>
+                                <input id="price" class="price" placeholder="0">
+                                <div class="priceSymbol"> ₽ </div>
+                                <label>
+                                    <label>
+                                        <button class="button_css text1" onclick="createItem()">
+                                            Создать
+                                        </button>
+                                    </label>
+        </div>
+    </div>
+    <script type="text/javascript">
+			function createItem() {
+				itemName = $('#name').val()
+				amount = $('#amount').val()
+				price = $('#price').val()
+				if (amount != 0)
+				{
+					$.ajax({
+						url: "/Groups/AddItem",
+						method: "post",
+						data: {
+                            groupId: "60c9c1c5f17e261b2be39925",
+							itemName : itemName,
+							cost : price,
+							volume : amount
+						}
+					})
+				}
+			}
+    </script>
+</body>
+</html>
